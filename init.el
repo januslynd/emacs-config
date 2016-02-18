@@ -32,3 +32,16 @@
 
 (use-package projectile
 	     :ensure t)
+;; PROGRAMMING LANGUAGES
+
+(use-package groovy-mode
+  :ensure t
+  :mode "\\.groovy\\'")
+
+(use-package haskell-mode
+  :ensure t
+  :mode ("\\.hs\\'" "\\.fr\\'"))
+
+(use-package scala-mode
+  :ensure t
+  :mode "\\.scala\\'")
