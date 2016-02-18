@@ -18,20 +18,26 @@
   (package-install 'use-package))
 
 (require 'use-package)
+
 (load-theme 'misterioso)
 
+;; GENERAL PURPOSE PACKAGES
+
 (use-package magit
-	     :pin melpa-stable
-	     :ensure t
-	     :bind ("C-x g" . magit-status)
-	     :init (setq magit-last-seen-setup-instructions "1.4.0"))
-
-
-(use-package multiple-cursors
-	     :ensure t)
+  :pin melpa-stable
+  :ensure t
+  :bind ("C-x g" . magit-status)
+  :init (setq magit-last-seen-setup-instructions "1.4.0"))
 
 (use-package projectile
-	     :ensure t)
+  :ensure t)
+
+(use-package multiple-cursors
+  :ensure t
+  :bind (("C-c m c" . mc/edit-lines)
+	 ("C-M-k" . mc/mark-next-like-this)
+	 ("C-M-j" . mc/mark-previous-like-this)))
+
 ;; PROGRAMMING LANGUAGES
 
 (use-package groovy-mode
