@@ -1,6 +1,13 @@
    
 ;; Personal emacs configuration
 
+;; GLOBAL SETTINGS
+
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(setq inhibit-startup-message t)
+
 (require 'package)
 
 (setq package-archives
