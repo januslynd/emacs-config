@@ -18,6 +18,7 @@
   (package-install 'use-package))
 
 (require 'use-package)
+(load-theme 'misterioso)
 
 (use-package magit
 	     :pin melpa-stable
