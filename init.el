@@ -70,3 +70,9 @@
 
 (use-package dockerfile-mode
   :ensure t)
+
+;; EDITING
+
+(use-package yaml-mode
+  :ensure t
+  :mode "\\.yml\\'")
