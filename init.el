@@ -49,8 +49,8 @@
 (use-package multiple-cursors
   :ensure t
   :bind (("C-c m c" . mc/edit-lines)
-	 ("C-M-k" . mc/mark-next-like-this)
-	 ("C-M-j" . mc/mark-previous-like-this)))
+	 ("C-M-j" . mc/mark-next-like-this)
+	 ("C-M-k" . mc/mark-previous-like-this)))
 
 ;; PROGRAMMING LANGUAGES
 
