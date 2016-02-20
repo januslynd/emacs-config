@@ -65,3 +65,8 @@
 (use-package scala-mode
   :ensure t
   :mode "\\.scala\\'")
+
+;; DOCKER
+
+(use-package dockerfile-mode
+  :ensure t)
