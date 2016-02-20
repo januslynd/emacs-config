@@ -52,6 +52,11 @@
 	 ("C-M-j" . mc/mark-next-like-this)
 	 ("C-M-k" . mc/mark-previous-like-this)))
 
+(use-package neotree
+  :ensure t
+  :bind (([f8] . neotree-toggle))
+  :config (setq neo-theme 'ascii))
+
 ;; PROGRAMMING LANGUAGES
 
 (use-package groovy-mode
