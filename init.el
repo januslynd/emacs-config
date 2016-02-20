@@ -8,6 +8,9 @@
 (scroll-bar-mode -1)
 (setq inhibit-startup-message t)
 
+;; put all backup files in the same dir
+(setq backup-directory-alist `(("." . "~/.saves")))
+
 (require 'package)
 
 (setq package-archives
