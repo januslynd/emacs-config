@@ -40,6 +40,8 @@
   :init (setq magit-last-seen-setup-instructions "1.4.0"))
 
 (use-package projectile
+  :ensure t
+  :init (projectile-global-mode))
   :ensure t)
 
 (use-package multiple-cursors
