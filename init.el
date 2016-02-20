@@ -42,6 +42,8 @@
 (use-package projectile
   :ensure t
   :init (projectile-global-mode))
+
+(use-package ag
   :ensure t)
 
 (use-package multiple-cursors
