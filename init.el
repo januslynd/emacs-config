@@ -1,4 +1,3 @@
-   
 ;; Personal emacs configuration
 
 ;; GLOBAL SETTINGS
@@ -7,6 +6,7 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (setq inhibit-startup-message t)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; put all backup files in the same dir
 (setq backup-directory-alist `(("." . "~/.saves")))
