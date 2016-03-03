@@ -11,6 +11,17 @@
 ;; put all backup files in the same dir
 (setq backup-directory-alist `(("." . "~/.saves")))
 
+;; Tab indent
+(setq-default indent-tabs-mode nil)
+(setq-default tab-stop-list (number-sequence 4 120 4))
+(setq-default c-basic-offset 4)
+(setq-default tab-width 4)
+(setq-default sgml-basic-offset 4)
+(setq-default nxml-child-indent tab-width)
+(setq-default nxml-outline-child-indent tab-width)
+(setq js-indent-level 4)
+(setq x-stretch-cursor 1)
+
 (require 'package)
 
 (setq package-archives
