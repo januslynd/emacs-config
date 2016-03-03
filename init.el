@@ -82,6 +82,10 @@
   :ensure t
   :mode "\\.scala\\'")
 
+(use-package clojure-mode
+  :ensure t
+  :mode ("\\.clj\\'" "\\.cljs\\'"))
+
 ;; DOCKER
 
 (use-package dockerfile-mode
