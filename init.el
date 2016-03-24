@@ -22,6 +22,10 @@
 (setq js-indent-level 4)
 (setq x-stretch-cursor 1)
 
+;; Zoom in/out
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+
 (require 'package)
 
 (setq package-archives
