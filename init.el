@@ -72,7 +72,7 @@
 
 (use-package groovy-mode
   :ensure t
-  :mode "\\.groovy\\'")
+  :mode ("\\.groovy\\'" "\\.gtpl\\'"))
 
 (use-package haskell-mode
   :ensure t
