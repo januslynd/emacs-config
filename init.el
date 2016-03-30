@@ -101,3 +101,7 @@
   :ensure t
   :mode "\\.yml\\'")
 (put 'narrow-to-region 'disabled nil)
+
+(use-package markdown-mode
+  :ensure t
+  :mode ("\\.md\\'" "\\.MD\\'"))
