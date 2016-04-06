@@ -8,6 +8,12 @@
 (setq inhibit-startup-message t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; auto-save configuration
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 ;; put all backup files in the same dir
 (setq backup-directory-alist `(("." . "~/.saves")))
 
