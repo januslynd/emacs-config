@@ -111,3 +111,10 @@
 (use-package markdown-mode
   :ensure t
   :mode ("\\.md\\'" "\\.MD\\'"))
+
+(require 'kotlin-mode)
+;;(use-package kotlin-mode
+;;  :ensure t
+;;  :load-path "elpa/kotlin-mode-0.1.0/"
+;;  :mode ("\\.kt\\'"))
+(add-to-list 'auto-mode-alist '("\\.kt\\'" . kotlin-mode))
