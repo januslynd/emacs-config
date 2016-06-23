@@ -80,6 +80,11 @@
 
 ;; PROGRAMMING LANGUAGES
 
+(use-package editorconfig
+  :ensure t
+  :config
+  (editorconfig-mode 1))
+
 (use-package groovy-mode
   :ensure t
   :mode ("\\.groovy\\'" "\\.gtpl\\'"))
