@@ -63,7 +63,9 @@
 
 (use-package projectile
   :ensure t
-  :init (projectile-global-mode))
+  :config
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  :init (projectile-mode))
 
 (use-package ag
   :ensure t)
